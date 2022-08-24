@@ -2,12 +2,12 @@
     alert(`Привіт! Дякую, що виділив час для ревью моєї роботи :-)`)
 
     let firstNumber = +prompt(`Будь ласка, введіть початкове число:`);
-    while (!Number.isInteger(firstNumber) || Number(firstNumber) == '' || (firstNumber % 1 === 0) {
+    while (!Number.isInteger(firstNumber) || Number(firstNumber) == '' || (firstNumber % 1 === 0)) {
         firstNumber = +prompt(`Упс, щось пішло не так. Введіть, будь ласка, ціле число, наприклад: 1, 2, 40, 145`)
     }
 
     let lastNumber = +prompt(`Будь ласка, введіть кінцеве число:`);
-    while (!Number.isInteger(lastNumber) || Number(lastNumber) == '' || (lastNumber % 1 === 0) {
+    while (!Number.isInteger(lastNumber) || Number(lastNumber) == '' || (lastNumber % 1 === 0)) {
         lastNumber = +prompt(`Упс, щось пішло не так. Введіть, будь ласка, ціле число, наприклад: 1, 2, 40, 145`)
     }
 
