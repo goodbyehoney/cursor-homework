@@ -2,16 +2,16 @@
     alert(`Привіт! Дякую, що виділив час для ревью моєї роботи :-)`)
 
     let firstNumber = +prompt(`Будь ласка, введіть початкове число:`);
-    if (!Number.isInteger(firstNumber) || Number(firstNumber) == '') {
+    while (!Number.isInteger(firstNumber) || Number(firstNumber) == '') {
         firstNumber = +prompt(`Упс, щось пішло не так. Введіть, будь ласка, ціле число, наприклад: 1, 2, 40, 145`)
     }
 
     let lastNumber = +prompt(`Будь ласка, введіть кінцеве число:`);
-    if (!Number.isInteger(lastNumber) || Number(lastNumber) == '') {
+    while (!Number.isInteger(lastNumber) || Number(lastNumber) == '') {
         lastNumber = +prompt(`Упс, щось пішло не так. Введіть, будь ласка, ціле число, наприклад: 1, 2, 40, 145`)
     }
 
-    if ((Number(firstNumber)) >= (Number(lastNumber))) {
+    while ((Number(firstNumber)) >= (Number(lastNumber))) {
         firstNumber = +prompt(`Мені сумно :( але Ваше початкове число >= Вашому кінцевому числу`)
         lastNumber = +prompt(`Мені сумно :( але Ваше кінцеве число >= Вашому початковому числу`)
     }
