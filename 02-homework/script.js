@@ -1,17 +1,21 @@
 
     alert(`Привіт! Дякую, що виділив час для ревью моєї роботи :-)`)
 
-    let firstNumber = +prompt(`Будь ласка, введіть початкове число:`);
-    if (!Number.isInteger(firstNumber) || Number(firstNumber) == '' || -Number(firstNumber)) {
-        firstNumber = +prompt(`Упс, щось пішло не так. Введіть, будь ласка, ціле число, наприклад: 1, 2, 40, 145`)
+    let firstNumber;
+    firstNumber = +prompt(`Будь ласка, введіть початкове число:`);
+    while (!Number.isInteger(firstNumber) || firstNumber == '' || firstNumber < 0) {
+        alert(`Упс, щось пішло не так. Введіть, будь ласка, ціле число, наприклад: 1, 2, 40, 145`);
+        firstNumber = +prompt(`Будь ласка, введіть початкове число:`);
     }
 
-    let lastNumber = +prompt(`Будь ласка, введіть кінцеве число:`);
-    if (!Number.isInteger(lastNumber) || Number(lastNumber) == '' || -Number(lastNumber)) {
-        lastNumber = +prompt(`Упс, щось пішло не так. Введіть, будь ласка, ціле число, наприклад: 1, 2, 40, 145`)
+    let lastNumber;
+    lastNumber = +prompt(`Будь ласка, введіть кінцеве число:`);
+    while (!Number.isInteger(lastNumber) || lastNumber == '' || lastNumber < 0) {
+        alert(`Упс, щось пішло не так. Введіть, будь ласка, ціле число, наприклад: 1, 2, 40, 145`);
+        lastNumber = +prompt(`Будь ласка, введіть кінцеве число:`);
     }
 
-    if ((Number(firstNumber)) >= (Number(lastNumber))) {
+    while ((Number(firstNumber)) >= (Number(lastNumber))) {
         firstNumber = +prompt(`Мені сумно :( але Ваше початкове число >= Вашому кінцевому числу`)
         lastNumber = +prompt(`Мені сумно :( але Ваше кінцеве число >= Вашому початковому числу`)
     }
