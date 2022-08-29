@@ -36,8 +36,7 @@
 
     // Функція генерації випадкового паролю (тільки числа), довжина по замовчуванню = 8 символам.
 
-    function generatePassword() {
-        let length = 8,
+    function generatePassword(length = 8) {
         charset = "0123456789";
         randomePassword = '';
         for (let i = 0, n = charset.length; i < length; ++i) {
