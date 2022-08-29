@@ -36,16 +36,14 @@
 
     // Функція генерації випадкового паролю (тільки числа), довжина по замовчуванню = 8 символам.
 
-    function generatePassword (length) {
-        length = 8;
-        charset = "0123456789";
-        randomePassword = '';
-        for (let i = 0, n = charset.length; i < length; ++i) {
-            randomePassword += charset.charAt(Math.floor(Math.random() * n));
+    function generatePassword (passLength = 8) {
+        newPassword = '';
+        for (let i = 0; i < passLength; i++) {
+            newPassword += (Math.random() * 10).toFixed().toString();
         }
-        return randomePassword;
+        return newPassword;
     }
-    document.writeln(`4. Функція генерації випадкового паролю (тільки числа), довжина по замовчуванню = 8 символів. Ваш новий пароль: ${generatePassword()} <br> <hr>  `)
+    document.writeln(`4. Функція генерації випадкового паролю (тільки числа), довжина по замовчуванню = 8 символів. Ваш новий пароль: ${generatePassword(4)} <br> <hr>  `)
 
     // Функція, яка вираховує суму, що залишається після оплати податку від зарабітньої плати.
 
