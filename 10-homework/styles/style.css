@@ -1,0 +1,63 @@
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/styles/img/1.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.key {
+    width: 100px;
+    height: 100px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    border: 3px solid white;
+    border-radius: 50px;
+    background: linear-gradient(rgba(147, 156, 158, 0.5), rgba(231, 222, 222, 0.5));
+    
+}
+
+kbd {
+    font-family: 'Times New Roman';
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.keyA {
+    color: green;
+}
+
+.keyS {
+    color: burlywood;
+}
+
+.keyD {
+    color: violet;
+}
+
+.keyF {
+    color: coral;
+}
+
+p {
+    font-family: 'Times New Roman';
+    font-weight: 300;
+    font-size: 18px;
+    color: black;
+}
+
+.active {
+    border: 3px solid lightgrey;
+}
