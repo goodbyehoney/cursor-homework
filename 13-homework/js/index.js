@@ -4,8 +4,8 @@
     const idGenerator = createIdGenerator();
 
     function* createIdGenerator() {
-        let id = 0;
-        while (true) { yield id++ }
+        let i = 0;
+        while (true) { yield i++ }
     };
 
     ID_BTN.addEventListener("click", () => {
@@ -27,7 +27,7 @@
         promotion = yield font;
         }
     }
-    const fontGenerator = newFontGenerator(16);
+    const fontGenerator = newFontGenerator(18);
 
     fontGenerator.next();
 
